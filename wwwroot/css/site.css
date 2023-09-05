@@ -1,22 +1,93 @@
-html {
-  font-size: 14px;
-}
-
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
   position: relative;
   min-height: 100%;
+  background-color: #e5aaf0;
+  font-family: 'Roboto';
+  font-size: 14px;
 }
 
 body {
   margin-bottom: 60px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Material Card */
+.my-card {
+  height: 350px;
+  width: 350px;
+}
+
+.my-card-content {
+  padding: 16px;
+}
+
+/* Material Button */
+.material-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.459);
+}
+
+.material-btn-primary {
+  background-color: rgb(98, 0, 238);
+  color: #fff;
+}
+
+.material-btn-primary:hover {
+  background-color: rgb(127, 35, 255);
+}
+
+/* Ripple Effect */
+.cercle {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.712);
+  border-radius: 50%;
+}
+
+.anim {
+  opacity: 0.3;
+  animation: touch 0.8s ease-out;
+}
+
+@keyframes touch {
+  40% {
+    opacity: 0.2;
+  }
+
+  100% {
+    width: 800px;
+    height: 800px;
+    opacity: 0;
+    margin: -400px;
+  }
 }

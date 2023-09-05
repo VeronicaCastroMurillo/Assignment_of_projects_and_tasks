@@ -1,8 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Prueba";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <br/>
+    <br/>
+    <!-- Textfield Fill -->
+    <label class="mdc-text-field mdc-text-field--filled">
+        <span class="mdc-text-field__ripple"></span>
+        <span class="mdc-floating-label" id="my-label-id">Hint text</span>
+        <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+        <span class="mdc-line-ripple"></span>
+    </label>
 </div>

@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("SQL_CONNECTION")));
+builder.Services.AddDbContext<ProjectContext>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("SQL_CONNECTION")));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

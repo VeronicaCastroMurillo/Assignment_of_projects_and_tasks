@@ -18,7 +18,37 @@
 </head>
 
 <body>
-    @RenderBody()
+    <!-- Navigation Bar -->
+    <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <button class="material-icons mdc-top-app-bar__navigation-icon material-icon-button ripple-effects"
+                    id="BtnOpenSideNav" data-value="false" aria-label="Open navigation menu" onclick="openSideNav()">
+                    menu
+                </button>
+                <span class="mdc-top-app-bar__title">Assingment of Projects and Tasks</span>
+            </section>
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+                    aria-label="Options">more_vert</button>
+            </section>
+        </div>
+    </header>
+    <main class="">
+        <div id="sidemenu" class="sidenav">
+            <ul>
+                <li><a onclick="openSideNav()">Hola</a></li>
+                <li><a onclick="openSideNav()">Hola</a></li>
+                <li><a onclick="openSideNav()">Hola</a></li>
+                <li><a onclick="openSideNav()">Hola</a></li>
+            </ul>
+        </div>
+        <div class="">
+            @RenderBody()
+        </div>
+
+    </main>
+
     <!-- JS Material -->
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <!-- JavaScript -->

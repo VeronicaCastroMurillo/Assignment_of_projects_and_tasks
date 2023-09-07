@@ -1,3 +1,4 @@
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -90,4 +91,56 @@ h1 {
     opacity: 0;
     margin: -400px;
   }
+}
+
+/* Barra Lateral */
+.sidenav {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  left: -250px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  transition: 0.5s;
+  list-style-type: none;
+}
+
+/* Botones Laterales */
+.sidenav a {
+  display: block;
+  color: rgb(46, 46, 46);
+  font-size: 20px;
+  padding: 15px 10%;
+  width: 100%;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: rgb(189, 189, 189);
+  transition: 0.3s;
+}
+
+/* Material Button Icon */
+.material-icon-button {
+  color:white;
+  background-color: rgb(98, 0, 238);
+  padding: 16px 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.material-icon-button:hover {
+  background-color: rgb(127, 35, 255);
+}
+
+.email-label{
+  width: 85%;
 }

@@ -3872,19 +3872,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Veronica\\.nuget\\packages\\": {}
+    "C:\\Users\\Aaron\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Veronica\\Assignment_of_projects_and_tasks\\Assignment_of_projects_and_tasks.csproj",
+      "projectUniqueName": "C:\\Users\\Aaron\\source\\repos\\Assignment_of_projects_and_tasks\\Assignment_of_projects_and_tasks.csproj",
       "projectName": "Assignment_of_projects_and_tasks",
-      "projectPath": "C:\\Users\\Veronica\\Assignment_of_projects_and_tasks\\Assignment_of_projects_and_tasks.csproj",
-      "packagesPath": "C:\\Users\\Veronica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Veronica\\Assignment_of_projects_and_tasks\\obj\\",
+      "projectPath": "C:\\Users\\Aaron\\source\\repos\\Assignment_of_projects_and_tasks\\Assignment_of_projects_and_tasks.csproj",
+      "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aaron\\source\\repos\\Assignment_of_projects_and_tasks\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Veronica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3948,7 +3948,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

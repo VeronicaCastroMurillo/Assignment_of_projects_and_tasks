@@ -22,7 +22,7 @@
     <header class="mdc-top-app-bar">
         <div class="mdc-top-app-bar__row">
             <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                <button class="material-icons mdc-top-app-bar__navigation-icon material-icon-button ripple-effects"
+                <button class="material-icons material-appbar-button material-btn-primary ripple-effects"
                     id="BtnOpenSideNav" data-value="false" aria-label="Open navigation menu" onclick="openSideNav()">
                     menu
                 </button>
@@ -34,7 +34,8 @@
             </section>
         </div>
     </header>
-    <main class="">
+    
+    <main class="mdc-top-app-bar--fixed-adjust">
         <div id="sidemenu" class="sidenav">
             <ul>
                 <li><a onclick="openSideNav()">Hola</a></li>
@@ -43,9 +44,10 @@
                 <li><a onclick="openSideNav()">Hola</a></li>
             </ul>
         </div>
-        <div class="">
+        <div class="content">
             @RenderBody()
         </div>
+
 
     </main>
 

@@ -16,20 +16,28 @@
 html {
   position: relative;
   min-height: 100%;
-  background-color: #e5aaf0;
   font-family: 'Roboto';
   font-size: 14px;
 }
 
 body {
   margin-bottom: 60px;
+  background-color: #e5aaf0;
 }
 
 h1 {
   text-align: center;
 }
 
+.content {
+  margin: 0 10%;
+}
+
 /* Material Card */
+.mdc-card {
+  position: unset !important;
+}
+
 .my-card {
   height: 350px;
   width: 350px;
@@ -64,6 +72,15 @@ h1 {
 
 .material-btn-primary:hover {
   background-color: rgb(127, 35, 255);
+}
+
+.material-btn-secondary {
+  background-color: rgb(1, 135, 134);
+  color: #fff;
+}
+
+.material-btn-secondary:hover {
+  background-color: rgb(46, 141, 139);
 }
 
 /* Ripple Effect */
@@ -125,9 +142,7 @@ h1 {
 }
 
 /* Material Button Icon */
-.material-icon-button {
-  color:white;
-  background-color: rgb(98, 0, 238);
+.material-appbar-button {
   padding: 16px 16px;
   border: none;
   border-radius: 30px;
@@ -137,10 +152,20 @@ h1 {
   transition: 0.3s;
 }
 
-.material-icon-button:hover {
-  background-color: rgb(127, 35, 255);
+.material-icon-button {
+  padding-top: 5px;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer !important;
+  position: relative;
+  outline: none;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.459);
 }
 
-.email-label{
-  width: 85%;
+.w-56px {
+  width: 56px !important;
 }

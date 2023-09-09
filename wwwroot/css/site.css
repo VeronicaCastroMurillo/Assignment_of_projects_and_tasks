@@ -114,26 +114,36 @@ h1 {
 .sidenav {
   z-index: 1;
   margin: 0;
-  padding: 0;
   width: 250px;
   left: -250px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
-  overflow: auto;
   transition: 0.5s;
+}
+
+.sidenav ul {
+  padding: 0;
   list-style-type: none;
 }
 
 /* Botones Laterales */
 .sidenav a {
+  text-decoration: none !important;
   display: block;
-  color: rgb(46, 46, 46);
+  color: rgb(46, 46, 46) !important;
   font-size: 20px;
   padding: 15px 10%;
   width: 100%;
   background-color: transparent;
   transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidenav a div {
+  top: 50px;
 }
 
 .sidenav a:hover {
@@ -166,6 +176,17 @@ h1 {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.459);
 }
 
+/* Other Styles */
+
 .w-56px {
   width: 56px !important;
+}
+
+.mr-20px {
+  margin-right: 20px
+}
+
+.search-bar-button {
+  padding-left: 10px;
+  width: 67px;
 }

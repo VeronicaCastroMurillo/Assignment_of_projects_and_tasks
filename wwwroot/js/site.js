@@ -4,8 +4,6 @@ const form_material = [].map.call(document.querySelectorAll('.mdc-text-field'), 
 });
 
 // Ripple Effect - Button
-const buttons = document.querySelectorAll(".ripple-button");
-
 var waveBtn = (function () {
     'use strict';
     var btn = document.querySelectorAll('.ripple-effects'), i;
@@ -19,6 +17,10 @@ var waveBtn = (function () {
 
             x = e.pageX - this.offsetLeft;
             y = e.pageY - this.offsetTop;
+
+            if (this.tagName.toLowerCase() === 'a') {
+                y = y - 55;
+            }
 
             newRound.style.left = x + "px";
             newRound.style.top = y + "px";
@@ -38,9 +40,6 @@ function openSideNav() {
     if (btnOpenSideNav.getAttribute("data-value") === "false") {
         sidemenu.style.marginLeft = "250px";
         btnOpenSideNav.setAttribute("data-value", "true");
-
-        // Establecer la posición fija y la altura máxima para el desplazamiento
-        sidemenu.style.position = "fixed";
         
     } else {
         sidemenu.style.marginLeft = "0px";
@@ -57,7 +56,7 @@ document.onclick = function (e) {
 
     // Si el usuario hace click fuera del algunos de esos marcos
     if (e.target.id !== 'sidemenu' &&
-        e.target.id !== 'topBar' && 
+        e.target.id !== 'top-app-bar' && 
         e.target.id !== 'BtnOpenSideNav'
     ) {
         document.getElementById("sidemenu").style.marginLeft = "0px";;

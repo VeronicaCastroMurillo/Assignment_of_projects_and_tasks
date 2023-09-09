@@ -57,7 +57,8 @@ namespace Assignment_of_projects_and_tasks.Services
                 return status;
             }
 
-            if(!await userManager.CheckPasswordAsync(user, _login.Password!)){
+            if (!await userManager.CheckPasswordAsync(user, _login.Password!))
+            {
                 status.Message = "The password doesn't exist";
                 status.StatusCode = 0;
                 return status;
@@ -65,17 +66,18 @@ namespace Assignment_of_projects_and_tasks.Services
 
             var signInResult = await signInManager.PasswordSignInAsync(user, _login.Password!, false, true);
 
-              if(signInResult.Succeeded){
-                    var userRole = await userManager.GetRolesAsync(user);
-              }
+            if (signInResult.Succeeded)
+            {
+                var userRole = await userManager.GetRolesAsync(user);
+            }
 
-           }
+            return status;
+
+        }
+
+        public async Task LogoutAsync()
+        {
+            await signInManager.SignOutAsync();
+        }
     }
-
-    public async Task LogoutAsync()
-    {
-        await signInManager.SignOutAsync();
-    }
-
-}
 }
